@@ -6,9 +6,7 @@ import User from "./User";
 
 const Users = () => {
     let[users, setUsers] = useState()
-    useEffect(() =>{
-        getUsers().then(value => setUsers([...value]) )
-    }, [])
+    useEffect(() =>{getUsers().then(value => setUsers([...value])) }, []);
     return (
         <View>
             <FlatList
